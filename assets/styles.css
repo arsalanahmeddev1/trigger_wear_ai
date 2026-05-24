@@ -174,3 +174,10 @@ form.submitting .wpcf7-spinner {
 .wpcf7-reflection > output[hidden] {
 	display: none;
 }
+.home_explore_video_play_btn {
+	padding: 0 !important;
+}
+.home_explore_video_play_btn i {
+	font-size: 30px;
+    color: #e5c111;
+}

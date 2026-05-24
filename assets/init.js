@@ -2205,4 +2205,4 @@ function initTriggerWareMailtoForms() {
   });
 }
 
-initTriggerWareMailtoForms();
+// initTriggerWareMailtoForms();
