@@ -16242,7 +16242,7 @@ body {
     height: auto;
     transform: rotate(30deg);
     border-radius: 594.097px;
-    opacity: .70;
+    opacity: .40;
     background: #73016d;
     filter: blur(188.4499969482px);
     position: absolute;
@@ -16268,7 +16268,7 @@ body {
     position: absolute;
     bottom: -150px;
     left: -440px;
-    opacity: .70;
+    opacity: .40;
 }
 
 @media(min-width: 1800px) {

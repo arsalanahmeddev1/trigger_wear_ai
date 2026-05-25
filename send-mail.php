@@ -45,12 +45,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Username = 'info@triggerware.ai';
         // $mail->Username = '7bcf94f4579ed1';
 
-        $mail->Password = 'Nmg&Dnc^^@1185';
+        $mail->Password = 'skhdhohkrvmdiqik';
         // $mail->Password = 'c0aaa235fd564f';
 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
-        $mail->Port = 465;
+        $mail->Port = 587;
 
         // ======================
         // EMAIL SETTINGS
