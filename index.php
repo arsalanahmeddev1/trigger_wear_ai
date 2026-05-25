@@ -1727,7 +1727,7 @@
               <div class="sec_heading_ribbon">
                 <h2 class="sec_heading_text span_full_width text-center mx-auto">
                   <span class="audience_heading_line">Powerful Enough For Techies, Easy Enough For All</span>
-                  <span class="audience_heading_line">Builders and Users<em>!</em></span>
+                  Builders and Users<em>!</em>
                 </h2>
 
               </div>
