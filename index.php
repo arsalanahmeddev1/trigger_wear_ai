@@ -22,7 +22,6 @@
 
   <title>TriggerWare.AI - Live Data Apps and Agents</title>
   <meta name="robots" content="index, follow">
-  
 
   <!-- This site is optimized with the Yoast SEO plugin v27.5 - https://yoast.com/product/yoast-seo-wordpress/ -->
   <meta property="og:locale" content="en_US">
@@ -84,7 +83,6 @@
       }]
     }
   </script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <!-- / Yoast SEO plugin. -->
 
 
@@ -2455,7 +2453,7 @@
                     </label>
                   </div>
                 </div>
-                <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
                 <div class="col-12">
                   <div class="d-flex align-items-center w-100">
                     <button type="submit" class="btn btn_yellow" aria-label="Submit form">

@@ -8,6 +8,7 @@ require 'vendor/autoload.php';
 header('Content-Type: application/json');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    
     // SANITIZE INPUTS
     $first_name = htmlspecialchars(trim($_POST['first-name']));
     $last_name = htmlspecialchars(trim($_POST['last-name']));
