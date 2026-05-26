@@ -3,6 +3,9 @@ const wWidth = window.innerWidth;
 const wHeight = window.innerHeight;
 const header = document.querySelector(".wraper-header");
 const headerHeight = document.querySelector(".wraper-header").offsetHeight;
+
+
+
 //console.log(headerHeight);
 
 // if (typeof DrawSVGPlugin !== "undefined") {
@@ -33,6 +36,30 @@ function isMobileDevice() {
 }
 
 function initSmoother() {
+
+  if (isMobileDevice()) {
+    const smoother = ScrollSmoother.get();
+  
+    if (smoother) {
+      smoother.kill();
+    }
+  
+    const main = document.querySelector('#main');
+    const content = document.querySelector('#content');
+  
+    if (main) {
+      main.removeAttribute('style');
+    }
+  
+    if (content) {
+      content.removeAttribute('style');
+    }
+  
+    document.body.style.height = 'auto';
+    document.documentElement.style.height = 'auto';
+  
+    ScrollTrigger.refresh();
+  }
   // Function to check if the device supports touch events
 
   // Only initialize smoother for non-touch devices on large screens (>= 1200px width)
@@ -60,6 +87,46 @@ function initSmoother() {
 
 // Initial call to initSmoother
 initSmoother();
+
+if (isMobileDevice()) {
+  document.querySelectorAll(
+    '.fade-in, .words_slide_from_right, .zooming_ani_item, .home_explore_flow_item, .home_explore_flow_arrow, [data-lov-reveal]'
+  ).forEach(el => {
+    el.style.opacity = '1';
+    el.style.transform = 'none';
+    el.style.visibility = 'visible';
+    el.style.willChange = 'auto';
+  });
+}
+
+if (isMobileDevice()) {
+  ScrollTrigger.getAll().forEach(trigger => trigger.kill(true));
+
+  document.querySelectorAll('.pin-spacer').forEach(spacer => {
+    const child = spacer.firstElementChild;
+
+    if (child) {
+      spacer.parentNode.insertBefore(child, spacer);
+    }
+
+    spacer.remove();
+  });
+
+  document.querySelectorAll('[style]').forEach(el => {
+    el.style.removeProperty('transform');
+    el.style.removeProperty('opacity');
+    el.style.removeProperty('will-change');
+    el.style.removeProperty('height');
+    el.style.removeProperty('padding');
+    el.style.removeProperty('position');
+    el.style.removeProperty('inset');
+  });
+
+  document.body.style.height = 'auto';
+  document.documentElement.style.height = 'auto';
+
+  ScrollTrigger.refresh();
+}
 
 if (!isMobileDevice()) {
   initHomePlatformFeatures();

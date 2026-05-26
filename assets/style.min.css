@@ -13457,7 +13457,7 @@ img {
     width: 100%;
     height: 450px;
     background: url("../images/footer-perple-glow-img.webp") no-repeat center/cover;
-    opacity: 1;
+    opacity: .5;
     pointer-events: none;
     z-index: 0
 }
@@ -17070,6 +17070,41 @@ body {
         max-width: none;
         min-height: 380px
     }
+
+    #main {
+        position: relative !important;
+        overflow: visible !important;
+        height: auto !important;
+        inset: auto !important;
+    }
+
+    #content {
+        transform: none !important;
+        overflow: visible !important;
+        height: auto !important;
+    }
+
+    body {
+        height: auto !important;
+        overflow-y: auto !important;
+    }
+
+
+    .fade-in,
+  .words_slide_from_right,
+  .zooming_ani_item,
+  .home_explore_flow_item,
+  .home_explore_flow_arrow {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+    will-change: auto !important;
+  }
+
+  [data-lov-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 @media(max-width: 767px) {

@@ -2328,7 +2328,8 @@
               <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="5"><input
                   type="hidden" name="_wpcf7_version" value="6.1.5"><input type="hidden" name="_wpcf7_locale"
                   value="en_US"><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o1"><input type="hidden"
-                  name="_wpcf7_container_post" value="0"><input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                  name="_wpcf7_container_post" value="0"><input type="hidden" name="_wpcf7_posted_data_hash" value=""><input
+                  type="hidden" name="type" value="contact form">
               </fieldset>
               <div class="row gx-3 gy-3">
 
@@ -2370,56 +2371,6 @@
                     <span class="wpcf7-form-control-wrap" data-name="title"><input size="40" maxlength="400"
                         class="wpcf7-form-control wpcf7-text form-control" id="contact_title" aria-invalid="false"
                         placeholder="Title" value="" type="text" name="title"></span>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="form-static-input">
-                    <span class="wpcf7-form-control-wrap" data-name="contact-type">
-                      <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
-                        aria-expanded="false">
-                        <div class="choices__inner"><select
-                            class="wpcf7-form-control wpcf7-select static_select_input choices__input"
-                            id="contact_state" aria-invalid="false" name="contact-type" hidden="" tabindex="-1"
-                            data-choice="active">
-                            <option value="" selected="">Chat with Us</option>
-                            <option value="Demo Request">Demo Request</option>
-                            <option value="Ask a Question">Ask a Question</option>
-                            <option value="Partnership">Partnership</option>
-                            <option value="Miscellaneous">Miscellaneous</option>
-                          </select>
-                          <div class="choices__list choices__list--single">
-                            <div class="choices__item choices__placeholder choices__item--selectable" data-item=""
-                              data-id="1" data-value="" aria-selected="true" role="option" data-placeholder="">Chat with
-                              Us</div>
-                          </div>
-                        </div>
-                        <div class="choices__list choices__list--dropdown" aria-expanded="false">
-                          <div class="choices__list" role="listbox">
-                            <div id="choices--contact_state-item-choice-1"
-                              class="choices__item choices__item--choice is-selected choices__placeholder choices__item--selectable is-highlighted"
-                              role="option" data-choice="" data-id="1" data-value="" data-choice-selectable=""
-                              aria-selected="true">Chat with Us</div>
-                            <div id="choices--contact_state-item-choice-2"
-                              class="choices__item choices__item--choice choices__item--selectable" role="option"
-                              data-choice="" data-id="2" data-value="Demo Request" data-choice-selectable=""
-                              aria-selected="false">Demo Request</div>
-                            <div id="choices--contact_state-item-choice-3"
-                              class="choices__item choices__item--choice choices__item--selectable" role="option"
-                              data-choice="" data-id="3" data-value="Ask a Question" data-choice-selectable=""
-                              aria-selected="false">Ask a Question</div>
-                            <div id="choices--contact_state-item-choice-4"
-                              class="choices__item choices__item--choice choices__item--selectable" role="option"
-                              data-choice="" data-id="4" data-value="Partnership" data-choice-selectable=""
-                              aria-selected="false">Partnership</div>
-                            <div id="choices--contact_state-item-choice-5"
-                              class="choices__item choices__item--choice choices__item--selectable" role="option"
-                              data-choice="" data-id="5" data-value="Miscellaneous" data-choice-selectable=""
-                              aria-selected="false">Miscellaneous</div>
-                          </div>
-                        </div>
-                      </div>
-                    </span>
                   </div>
                 </div>
 
@@ -2505,7 +2456,8 @@
               <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="5"><input
                   type="hidden" name="_wpcf7_version" value="6.1.5"><input type="hidden" name="_wpcf7_locale"
                   value="en_US"><input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f5-o2"><input type="hidden"
-                  name="_wpcf7_container_post" value="0"><input type="hidden" name="_wpcf7_posted_data_hash" value="">
+                  name="_wpcf7_container_post" value="0"><input type="hidden" name="_wpcf7_posted_data_hash" value=""><input
+                  type="hidden" name="type" value="request a demo form">
               </fieldset>
               <div class="row gx-3 gy-3">
 
@@ -2547,55 +2499,6 @@
                     <span class="wpcf7-form-control-wrap" data-name="title"><input size="40" maxlength="400"
                         class="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="Title"
                         value="" type="text" name="title"></span>
-                  </div>
-                </div>
-
-                <div class="col-12">
-                  <div class="form-static-input">
-                    <span class="wpcf7-form-control-wrap" data-name="contact-type">
-                      <div class="choices" data-type="select-one" tabindex="0" role="listbox" aria-haspopup="true"
-                        aria-expanded="false">
-                        <div class="choices__inner"><select
-                            class="wpcf7-form-control wpcf7-select static_select_input choices__input"
-                            aria-invalid="false" name="contact-type" hidden="" tabindex="-1" data-choice="active">
-                            <option value="">Chat with Us</option>
-                            <option value="Demo Request" selected="">Demo Request</option>
-                            <option value="Ask a Question">Ask a Question</option>
-                            <option value="Partnership">Partnership</option>
-                            <option value="Miscellaneous">Miscellaneous</option>
-                          </select>
-                          <div class="choices__list choices__list--single">
-                            <div class="choices__item choices__placeholder choices__item--selectable" data-item=""
-                              data-id="1" data-value="Demo Request" aria-selected="true" role="option">Demo Request
-                            </div>
-                          </div>
-                        </div>
-                        <div class="choices__list choices__list--dropdown" aria-expanded="false">
-                          <div class="choices__list" role="listbox">
-                            <div id="choices--contact-type-pa-item-choice-1"
-                              class="choices__item choices__item--choice is-selected choices__placeholder choices__item--selectable is-highlighted"
-                              role="option" data-choice="" data-id="1" data-value="" data-choice-selectable=""
-                              aria-selected="true">Chat with Us</div>
-                            <div id="choices--contact-type-pa-item-choice-2"
-                              class="choices__item choices__item--choice choices__item--selectable" role="option"
-                              data-choice="" data-id="2" data-value="Demo Request" data-choice-selectable=""
-                              aria-selected="false">Demo Request</div>
-                            <div id="choices--contact-type-pa-item-choice-3"
-                              class="choices__item choices__item--choice choices__item--selectable" role="option"
-                              data-choice="" data-id="3" data-value="Ask a Question" data-choice-selectable=""
-                              aria-selected="false">Ask a Question</div>
-                            <div id="choices--contact-type-pa-item-choice-4"
-                              class="choices__item choices__item--choice choices__item--selectable" role="option"
-                              data-choice="" data-id="4" data-value="Partnership" data-choice-selectable=""
-                              aria-selected="false">Partnership</div>
-                            <div id="choices--contact-type-pa-item-choice-5"
-                              class="choices__item choices__item--choice choices__item--selectable" role="option"
-                              data-choice="" data-id="5" data-value="Miscellaneous" data-choice-selectable=""
-                              aria-selected="false">Miscellaneous</div>
-                          </div>
-                        </div>
-                      </div>
-                    </span>
                   </div>
                 </div>
 

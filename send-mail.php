@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars(trim($_POST['business-email']));
     $company = htmlspecialchars(trim($_POST['company']));
     $title = htmlspecialchars(trim($_POST['title']));
-    $contact_type = htmlspecialchars(trim($_POST['contact-type']));
+    $form_type = htmlspecialchars(trim($_POST['type'] ?? ''));
     $message = htmlspecialchars(trim($_POST['message']));
 
     // VALIDATE EMAIL
@@ -52,19 +52,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
         $mail->Port = 587;
+        // $mail->Port = 465;
 
         // ======================
         // EMAIL SETTINGS
         // ======================
 
         $mail->setFrom(
-            'info@triggerware.ai',
-            // 'dev@yopmail.com',
+            // 'info@triggerware.ai',
+            'dev@yopmail.com',
             'Website Contact Form'
         );
 
         $mail->addAddress(
-            'info@triggerware.ai'
+            // 'info@triggerware.ai'
+            'dev@yopmail.com'
         );
 
         $mail->addReplyTo(
@@ -78,7 +80,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->isHTML(true);
 
-        $mail->Subject = 'New Contact Form Submission';
+        $mail->Subject = $form_type === 'request a demo form'
+            ? 'New Demo Request Form Submission'
+            : 'New Contact Form Submission';
 
         $mail->Body = "
 
@@ -112,8 +116,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </tr>
 
             <tr>
-                <td><strong>Contact Type</strong></td>
-                <td>{$contact_type}</td>
+                <td><strong>Form Type</strong></td>
+                <td>{$form_type}</td>
             </tr>
 
             <tr>
@@ -133,7 +137,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             Email: $email
             Company: $company
             Title: $title
-            Contact Type: $contact_type
+            Form Type: $form_type
             Message: $message
         ";
 
