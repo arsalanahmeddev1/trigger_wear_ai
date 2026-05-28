@@ -17065,6 +17065,12 @@ body {
 }
 
 @media(max-width: 1199px) {
+
+    html,
+    body {
+        touch-action: pan-y !important;
+    }
+
     .home_platform_features .home_platform_features_visual_inner {
         margin-left: 0;
         max-width: none;
@@ -17084,27 +17090,40 @@ body {
         height: auto !important;
     }
 
+
+    .fade-in,
+    .words_slide_from_right,
+    .zooming_ani_item,
+    .home_explore_flow_item,
+    .home_explore_flow_arrow {
+        opacity: 1 !important;
+        transform: none !important;
+        visibility: visible !important;
+        will-change: auto !important;
+    }
+
+    [data-lov-reveal] {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+    html,
     body {
         height: auto !important;
         overflow-y: auto !important;
+        touch-action: auto !important;
+        overscroll-behavior: auto !important;
+        -webkit-overflow-scrolling: touch;
     }
 
-
-    .fade-in,
-  .words_slide_from_right,
-  .zooming_ani_item,
-  .home_explore_flow_item,
-  .home_explore_flow_arrow {
-    opacity: 1 !important;
-    transform: none !important;
-    visibility: visible !important;
-    will-change: auto !important;
-  }
-
-  [data-lov-reveal] {
-    opacity: 1 !important;
-    transform: none !important;
-  }
+    #main,
+    #content {
+        position: relative !important;
+        height: auto !important;
+        overflow: visible !important;
+        transform: none !important;
+        touch-action: auto !important;
+    }
 }
 
 @media(max-width: 767px) {
@@ -18816,6 +18835,9 @@ body {
         bottom: 10px;
         transform: scale(0.92);
         transform-origin: bottom right
+    }
+    .home_explore_video_play_btn i {
+        font-size: 26px;
     }
 }
 

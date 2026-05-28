@@ -2245,11 +2245,11 @@
 
               <div class="footer_middle">
                 <div class="footer_social">
-                  <a href="https://www.linkedin.com/company/triggerware-ai" aria-label="LinkedIn">
+                  <a href="https://www.linkedin.com/company/triggerware-ai" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <img src="/assets/linkedin-icon.svg" alt="" width="21" height="21">
                   </a>
-                  <a href="https://x.com/realTriggerWare" aria-label="X">
-                    <img src="/assets/x-icon.svg" alt="" width="21" height="21">
+                  <a href="https://x.com/realTriggerWare" target="_blank" rel="noopener noreferrer" aria-label="X">
+                    <img src="/assets/x-icon.svg"  alt="" width="21" height="21">
                   </a>
                 </div>
 
