@@ -2404,7 +2404,7 @@
                     </label>
                   </div>
                 </div>
-
+                <input type="hidden" name="g-recaptcha-response" class="g-recaptcha-response">
                 <div class="col-12">
                   <div class="d-flex align-items-center w-100">
                     <button type="submit" class="btn btn_yellow" aria-label="Submit form">
@@ -2560,7 +2560,8 @@
   </div>
 
 
-
+  
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcfSPssAAAAABOWXFoJy4XFzEMslF0fbEtyk-cR"></script>
   <script type="text/javascript" src="/assets/jquery.min.js" id="jquery-js"></script>
   <script type="text/javascript" src="/assets/bootstrap.bundle.min.js" id="bootstrap-js"></script>
   <script type="text/javascript" src="/assets/swiper-bundle.min.js" id="swiper-js"></script>
@@ -2648,54 +2649,72 @@
   </script>
   <script>
     document.querySelectorAll('.contact_form_holder').forEach((form) => {
-      form.addEventListener('submit', async function(e) {
-        e.preventDefault();
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
 
-        const submitBtn = form.querySelector('button[type="submit"]');
-        submitBtn.disabled = true;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
 
-        try {
-          const response = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form)
-          });
+    try {
+      await new Promise((resolve) => grecaptcha.ready(resolve));
 
-          const result = await response.json();
+      let recaptchaInput = form.querySelector('input[name="g-recaptcha-response"]');
 
-          if (result.status === 'success') {
-            Swal.fire({
-              icon: 'success',
-              title: 'Success',
-              text: result.message,
-              confirmButtonColor: '#b39648'
-            });
+      if (!recaptchaInput) {
+        recaptchaInput = document.createElement('input');
+        recaptchaInput.type = 'hidden';
+        recaptchaInput.name = 'g-recaptcha-response';
+        recaptchaInput.className = 'g-recaptcha-response';
+        form.appendChild(recaptchaInput);
+      }
 
-            form.reset();
-
-            const modalEl = form.closest('.modal');
-            if (modalEl && window.bootstrap) {
-              bootstrap.Modal.getInstance(modalEl)?.hide();
-            }
-          } else {
-            Swal.fire({
-              icon: 'error',
-              title: 'Error',
-              text: result.message,
-              confirmButtonColor: '#b39648'
-            });
-          }
-        } catch (error) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'Something went wrong. Please try again.',
-            confirmButtonColor: '#b39648'
-          });
-        }
-
-        submitBtn.disabled = false;
+      const token = await grecaptcha.execute('6LcfSPssAAAAABOWXFoJy4XFzEMslF0fbEtyk-cR', {
+        action: 'submit'
       });
-    });
+
+      recaptchaInput.value = token;
+
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+      });
+
+      const result = await response.json();
+
+      if (result.status === 'success') {
+        Swal.fire({
+          icon: 'success',
+          title: 'Success',
+          text: result.message,
+          confirmButtonColor: '#b39648'
+        });
+
+        form.reset();
+
+        const modalEl = form.closest('.modal');
+        if (modalEl && window.bootstrap) {
+          bootstrap.Modal.getInstance(modalEl)?.hide();
+        }
+      } else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: result.message,
+          confirmButtonColor: '#b39648'
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Something went wrong. Please try again.',
+        confirmButtonColor: '#b39648'
+      });
+    }
+
+    submitBtn.disabled = false;
+  });
+});
   </script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

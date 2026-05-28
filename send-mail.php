@@ -9,6 +9,47 @@ header('Content-Type: application/json');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     
+     // ======================
+    // GOOGLE reCAPTCHA v3 VERIFY
+    // ======================
+
+    $recaptchaSecret = '6LcfSPssAAAAAES6wrDnxzdW2qiT1oVCuH8ZVfb1';
+
+    if (empty($_POST['g-recaptcha-response'])) {
+        echo json_encode([
+            'status' => 'error',
+            'message' => 'reCAPTCHA token missing.'
+        ]);
+        exit;
+    }
+
+    $recaptchaToken = $_POST['g-recaptcha-response'];
+
+    $verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
+
+    $verifyResponse = file_get_contents(
+        $verifyUrl .
+        '?secret=' . urlencode($recaptchaSecret) .
+        '&response=' . urlencode($recaptchaToken) .
+        '&remoteip=' . urlencode($_SERVER['REMOTE_ADDR'])
+    );
+
+    $responseData = json_decode($verifyResponse);
+
+    if (
+        !$responseData ||
+        empty($responseData->success) ||
+        $responseData->success !== true ||
+        !isset($responseData->score) ||
+        $responseData->score < 0.5
+    ) {
+        echo json_encode([
+            'status' => 'error',
+            'message' => 'reCAPTCHA verification failed.'
+        ]);
+        exit;
+    }
+
     // SANITIZE INPUTS
     $first_name = htmlspecialchars(trim($_POST['first-name']));
     $last_name = htmlspecialchars(trim($_POST['last-name']));
@@ -59,14 +100,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // ======================
 
         $mail->setFrom(
-            // 'info@triggerware.ai',
-            'dev@yopmail.com',
+            'info@triggerware.ai',
+            // 'dev@yopmail.com',
             'Website Contact Form'
         );
 
         $mail->addAddress(
-            // 'info@triggerware.ai'
-            'dev@yopmail.com'
+            'info@triggerware.ai'
+            // 'dev@yopmail.com'
         );
 
         $mail->addReplyTo(
