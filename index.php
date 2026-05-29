@@ -2168,7 +2168,7 @@
                     </div>
                   </button>
 
-                  <a href="#top" class="btn btn_purple with_shadow" aria-level="Request A Demo" data-bs-toggle="modal"
+                  <a href="javascript:void(0)" class="btn btn_purple with_shadow" aria-level="Request A Demo" data-bs-toggle="modal"
                     data-bs-target="#contactUsModalRequest">
                     <div class="btn_inner d-flex align-items-center justify-content-between">
                       <span class="btn_text_wrap"><span>Request A Demo</span></span>
@@ -2248,7 +2248,7 @@
                   <a href="https://www.linkedin.com/company/triggerware-ai" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <img src="/assets/linkedin-icon.svg" alt="" width="21" height="21">
                   </a>
-                  <a href="https://x.com/realTriggerWare" target="_blank" rel="noopener noreferrer" aria-label="X">
+                  <a href="https://x.com/TriggerWareAI" target="_blank" rel="noopener noreferrer" aria-label="X">
                     <img src="/assets/x-icon.svg"  alt="" width="21" height="21">
                   </a>
                 </div>
@@ -2259,8 +2259,6 @@
                     Policy</a>
                 </p>
               </div>
-
-
             </div>
           </div>
         </footer>
@@ -2371,6 +2369,17 @@
                     <span class="wpcf7-form-control-wrap" data-name="title"><input size="40" maxlength="400"
                         class="wpcf7-form-control wpcf7-text form-control" id="contact_title" aria-invalid="false"
                         placeholder="Title" value="" type="text" name="title"></span>
+                  </div>
+                </div>
+                 <div class="col-md-12">
+                  <div class="form-static-input">
+                    <select name="type" id="contact_industry" class="form-control custom-select">
+                      <option value="Chat with Us" selected>Chat with Us</option>
+                      <option value="Demo Request">Demo Request</option>
+                      <option value="Ask a Question">Ask a Question</option>
+                      <option value="Partnership">Partnership</option>
+                      <option value="Miscellaneous">Miscellaneous</option>
+                    </select>
                   </div>
                 </div>
 
@@ -2499,6 +2508,18 @@
                     <span class="wpcf7-form-control-wrap" data-name="title"><input size="40" maxlength="400"
                         class="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="Title"
                         value="" type="text" name="title"></span>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-static-input">
+                    <select name="type" id="contact_industry" class="form-control custom-select">
+                      <option value="Chat with Us">Chat with Us</option>
+                      <option value="Demo Request" selected>Demo Request</option>
+                      <option value="Ask a Question">Ask a Question</option>
+                      <option value="Partnership">Partnership</option>
+                      <option value="Miscellaneous">Miscellaneous</option>
+                    </select>
                   </div>
                 </div>
 

@@ -112,6 +112,12 @@ form.submitting .wpcf7-spinner {
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 }
+.custom-select {
+	appearance: auto !important;
+  -webkit-appearance: auto !important;
+  -moz-appearance: auto !important;
+}
+/* responsive css */
 
 @media (prefers-reduced-motion: reduce) {
 	.wpcf7-spinner::before {

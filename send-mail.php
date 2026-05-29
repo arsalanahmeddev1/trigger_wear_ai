@@ -8,6 +8,16 @@ require 'vendor/autoload.php';
 header('Content-Type: application/json');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    $isLocal = in_array($_SERVER['HTTP_HOST'], [
+        'localhost',
+        '127.0.0.1',
+        'localhost:8000',
+        'localhost:9000',
+        '127.0.0.1:8000'
+    ]);
+
+    if (!$isLocal) {
+
     
      // ======================
     // GOOGLE reCAPTCHA v3 VERIFY
@@ -49,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         ]);
         exit;
     }
-
+}
     // SANITIZE INPUTS
     $first_name = htmlspecialchars(trim($_POST['first-name']));
     $last_name = htmlspecialchars(trim($_POST['last-name']));
@@ -157,7 +167,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </tr>
 
             <tr>
-                <td><strong>Form Type</strong></td>
+                <td><strong>Type</strong></td>
                 <td>{$form_type}</td>
             </tr>
 
