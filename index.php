@@ -658,10 +658,12 @@
     /*# sourceURL=global-styles-inline-css */
   </style>
 
-  <link rel="stylesheet" id="contact-form-7-css" href="/assets/styles.css" type="text/css" media="all">
   <link rel="stylesheet" id="swiper-css" href="/assets/swiper-bundle.min.css" type="text/css" media="all">
   <link rel="stylesheet" id="choices-css" href="/assets/choices.min.css" type="text/css" media="all">
   <link rel="stylesheet" id="style-css" href="/assets/style.min.css" type="text/css" media="all">
+  <!-- Custom overrides: must load after style.min.css -->
+  <!-- <link rel="stylesheet" id="custom-css" href="/assets/styles.css?v=<?php echo filemtime(__DIR__ . '/assets/styles.css'); ?>" type="text/css" media="all"> -->
+  <link rel="stylesheet" href="./assets/styles.css" type="text/css" media="all">
   <link rel="https://api.w.org/" href="/wp-json/">
   <meta name="generator" content="WordPress 6.9.4">
 
@@ -832,14 +834,14 @@
       <div class="site-wrapper">
 
 
-        <section class="home_hero_section">
+        <section class="home_hero_section position-relative">
 
-          <div class="home_hero_bg_shape_holder position-absolute top-0 start-0 w-100 h-100">
+          <!-- <div class="home_hero_bg_shape_holder position-absolute top-0 start-0 w-100 h-100">
             <div class="container position-relative h-100">
               <div class="home_hero_bg_shape home_hero_bg_shape_one" aria-hidden="true"></div>
               <div class="home_hero_bg_shape home_hero_bg_shape_two" aria-hidden="true"></div>
             </div>
-          </div>
+          </div> -->
 
           <div class="container position-relative">
             <div class="home_hero_top_row">
@@ -848,37 +850,43 @@
 
                 <div class="home_hero_dsc_content">
                   <p>
-                    In the age of AI, one daunting challenge remains:
-                    <span>finding and acting on relevant&nbsp; live data<em>!</em></span>
+                    In the Age of AI, one daunting challenge remains:
+                    <span class="hero-sc-para" style="color: #15C2FF">finding and acting on relevant&nbsp; live data<em style="color: #BDD7EE">!</em></span>
                   </p>
-                  <p>
+                  <p class="d-flex">
+                    <span class="star-element"></span>
                     TriggerWare.AI has risen to this challenge.
                   </p>
-                  <p>
+                  <p class="d-flex">
+                    <span class="star-element"></span>
                     Using our solution, critical insights from live data sources can be at your fingertips within
                     minutes.
                   </p>
                 </div>
               </div>
-              <div class="home_hero_media_col">
-                <div class="home_hero_media_frame">
-                  <!-- <img src="/assets/images/home/hero-slide-1.webp" alt="Live data insights visual" width="611"
+              <div class="home_hero_media_col position-relative">
+                <div class="home_hero_media_frame-wrapper">
+                  <div class="home_hero_media_frame">
+                    <!-- <img src="/assets/images/home/hero-slide-1.webp" alt="Live data insights visual" width="611"
                     height="380" /> -->
 
-                  <!-- will open -->
-                  <iframe
-                    src="https://player.vimeo.com/video/1191590401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;controls=0&amp;muted=1&amp;loop=1&amp;background=1"
-                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                    title="family-overview-video"></iframe>
+                    <!-- will open -->
+                    <iframe
+                      src="https://player.vimeo.com/video/1191590401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;controls=0&amp;muted=1&amp;loop=1&amp;background=1"
+                      frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      title="family-overview-video"></iframe>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="home_hero_bottom_cta">
-              <p>We invite you to explore how our platform empowers you to unleash the potential of real-time data.</p>
+          </div>
+          <div class="home_hero_bottom_cta position-absolute bottom-0 start-0 w-100">
+            <p><span class="star-element"></span> <span class="para-span-text" style="margin-right: 10px;">We invite you to explore how our platform empowers you to unleash the potential of real-time data.</span> <span class="star-element"></span></p>
+            <div class="home_hero_bottom_cta_bg">
             </div>
+
           </div>
         </section>
 
@@ -2249,7 +2257,7 @@
                     <img src="/assets/linkedin-icon.svg" alt="" width="21" height="21">
                   </a>
                   <a href="https://x.com/TriggerWareAI" target="_blank" rel="noopener noreferrer" aria-label="X">
-                    <img src="/assets/x-icon.svg"  alt="" width="21" height="21">
+                    <img src="/assets/x-icon.svg" alt="" width="21" height="21">
                   </a>
                 </div>
 
@@ -2371,7 +2379,7 @@
                         placeholder="Title" value="" type="text" name="title"></span>
                   </div>
                 </div>
-                 <div class="col-md-12">
+                <div class="col-md-12">
                   <div class="form-static-input">
                     <select name="type" id="contact_industry" class="form-control custom-select">
                       <option value="Chat with Us" selected>Chat with Us</option>
@@ -2581,7 +2589,7 @@
   </div>
 
 
-  
+
   <script src="https://www.google.com/recaptcha/api.js?render=6LcfSPssAAAAABOWXFoJy4XFzEMslF0fbEtyk-cR"></script>
   <script type="text/javascript" src="/assets/jquery.min.js" id="jquery-js"></script>
   <script type="text/javascript" src="/assets/bootstrap.bundle.min.js" id="bootstrap-js"></script>
@@ -2670,72 +2678,72 @@
   </script>
   <script>
     document.querySelectorAll('.contact_form_holder').forEach((form) => {
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
 
-    const submitBtn = form.querySelector('button[type="submit"]');
-    submitBtn.disabled = true;
+        const submitBtn = form.querySelector('button[type="submit"]');
+        submitBtn.disabled = true;
 
-    try {
-      await new Promise((resolve) => grecaptcha.ready(resolve));
+        try {
+          await new Promise((resolve) => grecaptcha.ready(resolve));
 
-      let recaptchaInput = form.querySelector('input[name="g-recaptcha-response"]');
+          let recaptchaInput = form.querySelector('input[name="g-recaptcha-response"]');
 
-      if (!recaptchaInput) {
-        recaptchaInput = document.createElement('input');
-        recaptchaInput.type = 'hidden';
-        recaptchaInput.name = 'g-recaptcha-response';
-        recaptchaInput.className = 'g-recaptcha-response';
-        form.appendChild(recaptchaInput);
-      }
+          if (!recaptchaInput) {
+            recaptchaInput = document.createElement('input');
+            recaptchaInput.type = 'hidden';
+            recaptchaInput.name = 'g-recaptcha-response';
+            recaptchaInput.className = 'g-recaptcha-response';
+            form.appendChild(recaptchaInput);
+          }
 
-      const token = await grecaptcha.execute('6LcfSPssAAAAABOWXFoJy4XFzEMslF0fbEtyk-cR', {
-        action: 'submit'
-      });
+          const token = await grecaptcha.execute('6LcfSPssAAAAABOWXFoJy4XFzEMslF0fbEtyk-cR', {
+            action: 'submit'
+          });
 
-      recaptchaInput.value = token;
+          recaptchaInput.value = token;
 
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form)
-      });
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form)
+          });
 
-      const result = await response.json();
+          const result = await response.json();
 
-      if (result.status === 'success') {
-        Swal.fire({
-          icon: 'success',
-          title: 'Success',
-          text: result.message,
-          confirmButtonColor: '#b39648'
-        });
+          if (result.status === 'success') {
+            Swal.fire({
+              icon: 'success',
+              title: 'Success',
+              text: result.message,
+              confirmButtonColor: '#b39648'
+            });
 
-        form.reset();
+            form.reset();
 
-        const modalEl = form.closest('.modal');
-        if (modalEl && window.bootstrap) {
-          bootstrap.Modal.getInstance(modalEl)?.hide();
+            const modalEl = form.closest('.modal');
+            if (modalEl && window.bootstrap) {
+              bootstrap.Modal.getInstance(modalEl)?.hide();
+            }
+          } else {
+            Swal.fire({
+              icon: 'error',
+              title: 'Error',
+              text: result.message,
+              confirmButtonColor: '#b39648'
+            });
+          }
+        } catch (error) {
+          Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'Something went wrong. Please try again.',
+            confirmButtonColor: '#b39648'
+          });
         }
-      } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: result.message,
-          confirmButtonColor: '#b39648'
-        });
-      }
-    } catch (error) {
-      Swal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'Something went wrong. Please try again.',
-        confirmButtonColor: '#b39648'
-      });
-    }
 
-    submitBtn.disabled = false;
-  });
-});
+        submitBtn.disabled = false;
+      });
+    });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>

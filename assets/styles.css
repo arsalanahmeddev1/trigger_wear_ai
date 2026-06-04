@@ -1,3 +1,45 @@
+
+
+@font-face {
+	font-family: 'Arial Rounded MT';
+	src: url('/assets/fonts/Arial Rounded MT + Helvetica.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Arial Rounded MT';
+	src: url('/assets/fonts/Arial Rounded MT_300 + Helvetica.ttf') format('truetype');
+	font-weight: 300;
+	font-style: light;
+}
+@font-face {
+	font-family: 'Arial Rounded MT';
+	src: url('/assets/fonts/Arial Rounded MT_700 + Helvetica.ttf') format('truetype');
+	font-weight: 700;
+	font-style: bold;
+}
+
+@font-face {
+	font-family: 'Source Serif Pro';
+	src: url('/assets/fonts/SourceSerifPro-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Source Serif Pro';
+	src: url('/assets/fonts/SourceSerifPro-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: bold;
+}
+
+
+:root {
+	--font-arial-rounded: 'Arial Rounded MT', Arial, sans-serif; 
+	--font-source-serif-pro: 'Source Serif Pro', Arial, sans-serif;
+}
+
+
+
 .wpcf7 .screen-reader-response {
 	position: absolute;
 	overflow: hidden;
@@ -117,6 +159,13 @@ form.submitting .wpcf7-spinner {
   -webkit-appearance: auto !important;
   -moz-appearance: auto !important;
 }
+.home_hero_section * {
+	font-family: var(--font-arial-rounded) !important;
+}
+.hero-sc-para {
+	font-family: var(--font-source-serif-pro) !important;
+	font-style: italic !important;
+}
 /* responsive css */
 
 @media (prefers-reduced-motion: reduce) {
@@ -180,6 +229,63 @@ form.submitting .wpcf7-spinner {
 .wpcf7-reflection > output[hidden] {
 	display: none;
 }
+/* Hero video: iframe sits inside tw-ai frame background (789×604 PNG) */
+.home_hero_section .home_hero_media_col {
+	position: relative;
+}
+
+.home_hero_media_frame-wrapper {
+	position: relative !important;
+	top: auto !important;
+	left: auto !important;
+	width: 100% !important;
+	max-width: 611px !important;
+	height: auto !important;
+	aspect-ratio: 789 / 604 !important;
+	background-image: url('/images/tw-ai _video-bg-frame.png') !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+	background-size: 100% 100% !important;
+	display: block !important;
+}
+
+.home_hero_section .home_hero_media_frame {
+	position: absolute !important;
+	top: 3% !important;
+	right: 3% !important;
+	bottom: 3.5% !important;
+	left: 3% !important;
+	width: auto !important;
+	max-width: none !important;
+	aspect-ratio: unset !important;
+	border: none !important;
+	border-radius: 36px !important;
+	overflow: hidden !important;
+	background: transparent !important;
+}
+
+.home_hero_section .home_hero_media_frame iframe {
+	position: absolute !important;
+	top: 50% !important;
+	left: 50% !important;
+	width: 90% !important;
+	height: 90% !important;
+	transform: translate(-50%, -50%) !important;
+	border: 0 !important;
+	display: block !important;
+}
+
+@media (max-width: 767.98px) {
+	.home_hero_section .home_hero_media_frame {
+		border: none !important;
+		border-radius: 22px !important;
+		top: 2.5% !important;
+		right: 2.5% !important;
+		bottom: 3% !important;
+		left: 2.5% !important;
+	}
+}
+
 .home_explore_video_play_btn {
 	padding: 0 !important;
 }

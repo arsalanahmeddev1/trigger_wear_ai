@@ -237,7 +237,26 @@ h1,
 .h1 {
     font-size: calc(1.375rem + 1.5vw)
 }
+.home_hero_bottom_cta_bg {
+    background-color: #2877A8;
+    padding: 20px;
+}
+.home_hero_bottom_cta p {
+    padding: 40px 0 20px;
+}
 
+.home_hero_media_frame-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 611px;
+    aspect-ratio: 789 / 604;
+    background-image: url('../images/tw-ai _video-bg-frame.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: block;
+}
+/* responsive */
 @media(min-width: 1200px) {
 
     h1,
@@ -14322,6 +14341,11 @@ body {
     }
 }
 
+.star-element {
+    position: relative;
+}
+
+.star-element::before,
 .sec_heading_wrap .sec_heading_text>span:not(.small_caps_text):before {
     content: "";
     position: relative;
@@ -14338,12 +14362,26 @@ body {
     margin-right: 8px
 }
 
+
+
 @media(min-width: 768px) {
+
+    .star-element::before,
     .sec_heading_wrap .sec_heading_text>span:not(.small_caps_text):before {
         width: 27px;
         height: 27px;
         top: 6px;
         margin-right: 12px
+    }
+    .star-element::before {
+        width: 22px;
+        height: 22px;
+        top: 0;
+        filter: brightness(0) saturate(100%) invert(80%) sepia(51%) saturate(3509%) hue-rotate(165deg) brightness(101%) contrast(103%);
+    }
+    .home_hero_bottom_cta .star-element::before {
+        top: 4px;
+        filter: brightness(0) saturate(100%) invert(71%) sepia(30%) saturate(3409%) hue-rotate(359deg) brightness(110%) contrast(108%);
     }
 }
 
@@ -15420,8 +15458,7 @@ body {
 .home_hero_section {
     position: relative;
     overflow: hidden;
-    padding-top: 183px;
-    padding-bottom: 90px;
+    padding: 183px 0;
     background-color: #021d40
 }
 
@@ -15487,11 +15524,14 @@ body {
 
 .home_hero_section .home_hero_kicker {
     margin: 0 0 20px;
-    font-family: "Epilogue", sans-serif;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 1;
-    color: #ffcb35
+    color: #fff;
+    background-color: #5d0c6a;
+    max-width: max-content;
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 @media(max-width: 1399px) {
@@ -15556,7 +15596,7 @@ body {
 
 @media(min-width: 1200px) {
     .home_hero_section .home_hero_dsc_content p {
-        margin-bottom: 18px
+        margin-bottom: 25px
     }
 }
 
@@ -15599,34 +15639,39 @@ body {
 }
 
 .home_hero_section .home_hero_media_frame {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 40px;
-    border: 14px solid #630089;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    bottom: 3.5%;
+    left: 3%;
+    width: auto;
+    max-width: none;
+    border: none;
+    border-radius: 36px;
     overflow: hidden;
-    background-color: hsla(0, 0%, 100%, .08);
-    position: relative;
-    aspect-ratio: 1536/897
-}
-
-@media(min-width: 768px) {
-    .home_hero_section .home_hero_media_frame {
-        width: 611px
-    }
+    background: transparent;
+    aspect-ratio: unset;
 }
 
 @media(max-width: 767.98px) {
     .home_hero_section .home_hero_media_frame {
-        border: 8px solid #630089;
-        border-radius: 24px
+        top: 2.5%;
+        right: 2.5%;
+        bottom: 3%;
+        left: 2.5%;
+        border: none;
+        border-radius: 22px
     }
 }
 
 .home_hero_section .home_hero_media_frame iframe {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+    border: 0;
     display: block
 }
 
@@ -15646,9 +15691,10 @@ body {
 
 .home_hero_section .home_hero_bottom_cta {
     margin-top: 80px;
-    border-radius: 20px;
-    padding: 20px 28px;
-    background-color: #03a0f9;
+    background-image: url('../images/tw-ai _footer-top-band.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     position: relative;
     z-index: 1
@@ -15666,7 +15712,7 @@ body {
     margin: 0;
     font-family: "Epilogue", sans-serif;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.33;
     letter-spacing: -0.24px;
     color: #fff
@@ -18837,6 +18883,7 @@ body {
         transform: scale(0.92);
         transform-origin: bottom right
     }
+
     .home_explore_video_play_btn i {
         font-size: 26px;
     }
@@ -19381,10 +19428,10 @@ body {
     bottom: -430px !important
 }
 
-.home_hero_section .home_hero_media_frame {
+/* .home_hero_section .home_hero_media_frame {
     border-color: #76148a !important;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, .06), 0 26px 70px rgba(2, 29, 64, .28) !important
-}
+} */
 
 .sec_heading_badge {
     color: #73016d !important;
@@ -19467,3 +19514,4 @@ body {
         letter-spacing: 0
     }
 }
+
