@@ -15,9 +15,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
   <link href="/assets/css2.css" rel="stylesheet">
 
-
-  <link rel="shortcut icon" href="/assets/footer-logo.png" type="image/png">
-  <link rel="icon" href="/assets/footer-logo.png" type="image/png">
+  <!-- fav icon -->
+  <link rel="shortcut icon" href="./images/fav.ico" type="image/png">
+  <link rel="icon" href="./images/fav.ico" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>TriggerWare.AI - Live Data Apps and Agents</title>
@@ -2592,14 +2592,57 @@
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
       <div class="modal-content contact_us_modal_content">
         <div class="modal-header contact_us_modal_header">
-          <h2 class="modal-title" id="termsOfServiceModalLabel">Terms of Service</h2>
+          <h2 class="modal-title" id="termsOfServiceModalLabel">TERMS OF USE</h2>
           <button type="button" class="contact_us_modal_close" data-bs-dismiss="modal" aria-label="Close">
             <img src="/assets/close-white-icon.svg" alt="" width="34" height="34">
           </button>
         </div>
         <div class="modal-body contact_us_modal_body footer_policy_modal_body">
           <div class="footer_policy_modal_content">
-            <p>Add your Terms of Service content here.</p>
+            <h2>1. Acceptance of Terms</h2>
+            <p>
+              By accessing or using our website, you agree to comply with and be bound by these
+              Terms. If you do not agree, please do not use our site.
+            </p>
+            <h2>2. Intellectual Property</h2>
+            <p>
+              All content on this site, including text, logos, graphics, and code, is the property of triggerware.ai and is protected by copyright laws. You may not copy,
+              reproduce, or republish our content without express written permission.
+            </p>
+            <h2>3. Acceptable Use</h2>
+            <p>
+              You agree to use this website only for lawful purposes. You must not:
+            </p>
+            <ul>
+              <li>Use the site to harass, stalk, or harm others.</li>
+              <li>Attempt to hack, disrupt, or extract data from our systems (e.g., via screen-
+                scraping).</li>
+              <li>Post or transmit malicious software, spam, or infringing material.</li>
+            </ul>
+            <h2>4. User Accounts</h2>
+            <p>
+              If you create an account, you are responsible for keeping your password secure. You
+              are accountable for all activities that occur under your account. We reserve the right to
+              terminate accounts at our discretion.
+            </p>
+            <h2>5. Limitation of Liability</h2>
+            <p>
+              Our website is provided on an &quot;as is&quot; basis. We are not liable for any direct, indirect, or
+              incidental damages arising from your use of, or inability to use, our website.
+            </p>
+            <h2>6. Links to Third-Party Websites</h2>
+            <p>Our site may contain links to outside websites. We have no control over the content or
+              privacy practices of these third-party sites and assume no responsibility for them.</p>
+            <h2>7. Changes to Terms</h2>
+            <p>We reserve the right to update these Terms at any time. We will post the revised Terms
+              on this page, and your continued use of the site constitutes acceptance of the changes.
+              Specifically, there could be new rate limits or different cost tiers for different levels of
+              usage of the TriggerWare.ai software through <a target="_blank" rel="noopener noreferrer" href="https://console.triggerware.ai">https://console.triggerware.ai</a> without
+              notice.</p>
+            <h2>8. Contact Information</h2>
+            <p>If you have any questions regarding these Terms, please contact us at</p>
+            <span><a href="mailto:info@triggerware.ai">info@triggerware.ai</a></span>
+
           </div>
         </div>
       </div>
@@ -2608,7 +2651,7 @@
 
   <div class="modal fade contact_us_modal footer_policy_modal" id="privacyPolicyModal" tabindex="-1"
     aria-labelledby="privacyPolicyModalLabel" aria-hidden="true" data-bs-focus="false">
-    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+    <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
       <div class="modal-content contact_us_modal_content">
         <div class="modal-header contact_us_modal_header">
           <h2 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h2>
@@ -2618,7 +2661,161 @@
         </div>
         <div class="modal-body contact_us_modal_body footer_policy_modal_body">
           <div class="footer_policy_modal_content">
-            <p>Add your Privacy Policy content here.</p>
+            <h2>CalQLogic Privacy Policy</h2>
+            <p>
+              This privacy policy has been compiled to better serve those who are concerned with how their ‘Personally identifiable information’ (PII) is being used online. PII, as used in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.
+            </p>
+            <h2>
+              What personal information do we collect from the people that visit our blog, website or app?
+            </h2>
+            <p>
+              When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address, phone number or other details to help you with your experience.
+            </p>
+            <h2>
+              When do we collect information?
+            </h2>
+            <p>
+              We collect information from you when you fill out a form or enter information on our site.
+            </p>
+            <h2>
+              How do we use your information?
+            </h2>
+            <p>
+              We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:
+            </p>
+            <ul>
+              <li>To personalize user’s experience and to allow us to deliver the type of content and product offerings in which you are most interested.
+              </li>
+              <li>To improve our website in order to better serve you.
+              </li>
+              <li>To allow us to better service you in responding to your customer service requests.
+              </li>
+              <li>To send periodic emails regarding your order or other products and services.
+              </li>
+            </ul>
+            <h2>How do we protect visitor information?</h2>
+            <p>
+              Our website is scanned on a regular basis for security holes and known vulnerabilities in order to make your visit to our site as safe as possible.
+            </p>
+            <h2>We do not use an SSL certificate</h2>
+            <p>We only provide articles and information, and we never ask for personal or private information.</p>
+            <h2>Do we use ‘cookies’?</h2>
+            <p>
+              We do not use cookies for tracking purposes
+            </p>
+            <p>
+              You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies. You do this through your browser (like Internet Explorer) settings. Each browser is a little different, so look at your browser’s Help menu to learn the correct way to modify your cookies.
+            </p>
+            <p>
+              If you disable cookies off, some features will be disabled that make your site experience more efficient and some of our services will not function properly.
+            </p>
+            <p>
+              However, you can still place orders.
+            </p>
+            <h2>Third Party Disclosure</h2>
+            <p>
+              We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information.
+            </p>
+            <h2>Third party links</h2>
+            <p>
+              We do not include or offer third party products or services on our website.
+            </p>
+            <h2>Google</h2>
+            <p>
+              Google’s advertising requirements can be summed up by Google’s Advertising Principles. They are put in place to provide a positive experience for users. <a target="_blank" rel="noopener noreferrer" href="https://support.google.com/adwordspolicy/answer/1316548?hl=en">https://support.google.com/adwordspolicy/answer/1316548?hl=en</a>
+            </p>
+            <p>
+              We have not enabled Google AdSense on our site but we may do so in the future.
+            </p>
+            <h2>
+              California Online Privacy Protection Act
+            </h2>
+            <p>
+              CalOPPA is the first state law in the nation to require commercial websites and online services to post a privacy policy. The law’s reach stretches well beyond California to require a person or company in the United States (and conceivably the world) that operates websites collecting personally identifiable information from California consumers to post a conspicuous privacy policy on its website stating exactly the information being collected and those individuals with whom it is being shared, and to comply with this policy. – See more at: <a target="_blank" rel="noopener noreferrer" href="http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf">http://consumercal.org/california-online-privacy-protection-act-caloppa/#sthash.0FdRbT51.dpuf</a>
+            </p>
+            <p>
+              According to CalOPPA we agree to the following:
+            </p>
+            <p>
+              Users can visit our site anonymously
+            </p>
+            <p>
+              Once this privacy policy is created, we will add a link to it on our home page, or as a minimum on the first significant page after entering our website.
+            </p>
+            <p>Our Privacy Policy link includes the word ‘Privacy’, and can be easily be found on the page specified above.</p>
+            <h2>Users will be notified of any privacy policy changes:
+
+            </h2>
+            <p>
+              On our Privacy Policy Page
+            </p>
+            <h2>Users are able to change their personal information:
+
+            </h2>
+            <p>By emailing us
+
+            </p>
+            <h2>How does our site handle do not track signals?
+
+            </h2>
+            <p>
+              We honor do not track signals and do not track, plant cookies, or use advertising when a Do Not Track (DNT) browser mechanism is in place.
+            </p>
+            <h2>Does our site allow third party behavioral tracking?
+
+            </h2>
+            <p>It’s also important to note that we do not allow third party behavioral tracking
+
+            </p>
+            <h2>
+              COPPA (Children Online Privacy Protection Act)
+
+
+            </h2>
+            <p>When it comes to the collection of personal information from children under 13, the Children’s Online Privacy Protection Act (COPPA) puts parents in control. The Federal Trade Commission, the nation’s consumer protection agency, enforces the COPPA Rule, which spells out what operators of websites and online services must do to protect children’s privacy and safety online.
+
+            </p>
+            <p>We do not specifically market to children under 13.
+
+            </p>
+            <h2>Fair Information Practices
+
+            </h2>
+            <p>The Fair Information Practices Principles form the backbone of privacy law in the United States and the concepts they include have played a significant role in the development of data protection laws around the globe. Understanding the Fair Information Practice Principles and how they should be implemented is critical to comply with the various privacy laws that protect personal information.
+
+            </p>
+            <p>In order to be in line with Fair Information Practices we will take the following responsive action, should a data breach occur:
+
+            </p>
+            <p>We will notify the users via email – within 7 business days
+
+            </p>
+            <p>We also agree to the individual redress principle, which requires that individuals have a right to pursue legally enforceable rights against data collectors and processors who fail to adhere to the law. This principle requires not only that individuals have enforceable rights against data users, but also that individuals have recourse to courts or a government agency to investigate and/or prosecute non-compliance by data processors.
+
+            </p>
+            <h2>Contacting Us
+
+            </h2>
+            <p>If there are any questions regarding this privacy policy you may contact us using the information below.
+
+            </p>
+            <div class="footer_policy_modal_content_contact_info">
+              <span>CalQLogic</span>
+              <span>
+                <a href="https://www.google.com/maps/search/?api=1&query=5777+W+Century+Blvd+Suite+1185+Los+Angeles+CA+90045" target="_blank" rel="noopener noreferrer">
+                  5777 W Century Blvd. Suite 1185<br>
+                  Los Angeles, CA 90045
+                  United States
+                </a>
+              </span>
+              <span>
+                ph: <a href="tel:3103373014">(310) 337-3014</a>
+              </span>
+              <span>
+                fax: <a href="tel:3103373012">(310) 337-3012</a>
+              </span>
+              <span><a href="mailto:info@triggerware.ai">info@triggerware.ai</a></span>
+            </div>
           </div>
         </div>
       </div>

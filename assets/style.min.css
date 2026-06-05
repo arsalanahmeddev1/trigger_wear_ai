@@ -253,6 +253,24 @@ h1,
     background: url(../images/tw-ai%20_video-bg-frame.png) no-repeat center/100% 100%;
     display: block
 }
+.footer_policy_modal a:hover {
+    color: #021d40;
+}
+.footer_policy_modal_content_contact_info span {
+    display: block;
+    margin-bottom: 5px;
+}
+.footer_policy_modal h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 600;
+}
+.footer_policy_modal p {
+    margin-bottom: 20px;
+}
+.footer_policy_modal ul li {
+    list-style: disc;
+}
 /* responsive */
 @media(min-width: 1200px) {
 
@@ -18895,9 +18913,7 @@ body {
     --bs-modal-width: 650px
 }
 
-.contact_us_modal .modal-dialog {
-    max-width: 650px
-}
+
 
 .contact_us_modal_content {
     border: 0;
@@ -19474,13 +19490,12 @@ body {
 }
 
 .home_audience_card:not(.is-expanded) .home_audience_card_peek img {
-    opacity: .32 !important;
     filter: grayscale(8%) brightness(1.16) saturate(.82)
 }
 
 .home_audience_card_peek.home_audience_card_peek--builders .home_audience_card_peek_scrim,
 .home_audience_card_peek.home_audience_card_peek--techies .home_audience_card_peek_scrim {
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .90) 34%, rgba(255, 255, 255, .54) 64%, rgba(255, 255, 255, .30) 100%) !important;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .30) 34%, rgba(255, 255, 255, .54) 64%, rgba(255, 255, 255, .30) 100%) !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;

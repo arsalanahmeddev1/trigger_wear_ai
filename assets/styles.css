@@ -309,7 +309,6 @@ form.submitting .wpcf7-spinner {
 }
 
 .footer_policy_modal.contact_us_modal .modal-dialog {
-	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -326,13 +325,6 @@ form.submitting .wpcf7-spinner {
 	color: #021d40;
 }
 
-.footer_policy_modal_content p {
-	margin: 0 0 1em;
-}
-
-.footer_policy_modal_content p:last-child {
-	margin-bottom: 0;
-}
 
 .home_explore_video_play_btn {
 	padding: 0 !important;
