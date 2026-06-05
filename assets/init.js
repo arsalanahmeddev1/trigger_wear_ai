@@ -775,6 +775,40 @@ if (!isMobileDevice()) {
 // ========= end for all vVideo =============
 
 (function () {
+  function resizeHeroVimeo() {
+    const iframe = document.getElementById("heroVimeo");
+    const container = document.querySelector(".home_hero_media_video_viewport");
+    if (!iframe || !container) return;
+
+    const containerW = container.offsetWidth;
+    const containerH = container.offsetHeight;
+    const videoRatio = 16 / 9;
+    let newW;
+    let newH;
+
+    if (containerW / containerH < videoRatio) {
+      newH = containerH;
+      newW = newH * videoRatio;
+    } else {
+      newW = containerW;
+      newH = newW / videoRatio;
+    }
+
+    iframe.style.width = `${newW}px`;
+    iframe.style.height = `${newH}px`;
+    iframe.style.position = "absolute";
+    iframe.style.top = "50%";
+    iframe.style.left = "50%";
+    iframe.style.transform = "translate(-50%, -50%)";
+    iframe.style.border = "0";
+  }
+
+  window.addEventListener("load", resizeHeroVimeo);
+  window.addEventListener("resize", resizeHeroVimeo);
+  window.addEventListener("orientationchange", resizeHeroVimeo);
+})();
+
+(function () {
   function resizeBgVideo() {
     const iframe = document.getElementById("vVideo2");
     if (!iframe) return;

@@ -866,16 +866,14 @@
               </div>
               <div class="home_hero_media_col position-relative">
                 <div class="home_hero_media_frame-wrapper">
-                  <div class="home_hero_media_frame">
-                    <!-- <img src="/assets/images/home/hero-slide-1.webp" alt="Live data insights visual" width="611"
-                    height="380" /> -->
-
-                    <!-- will open -->
+                  <div class="home_hero_media_video_viewport">
                     <iframe
+                      id="heroVimeo"
                       src="https://player.vimeo.com/video/1191590401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;controls=0&amp;muted=1&amp;loop=1&amp;background=1"
                       frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                       referrerpolicy="strict-origin-when-cross-origin"
                       title="family-overview-video"></iframe>
+                    <span class="home_hero_media_frame_shade" aria-hidden="true"></span>
                   </div>
                 </div>
               </div>
@@ -2263,8 +2261,9 @@
 
                 <p class="footer_copyright">© 2026 TriggerWare.Ai. All Rights Reserved.</p>
 
-                <p class="footer_policy_text"><a href="#top">Terms of Service</a><span>|</span><a href="#top">Privacy
-                    Policy</a>
+                <p class="footer_policy_text">
+                  <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#termsOfServiceModal">Terms of Service</a><span>|</span>
+                  <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a>
                 </p>
               </div>
             </div>
@@ -2588,6 +2587,43 @@
     </div>
   </div>
 
+  <div class="modal fade contact_us_modal footer_policy_modal" id="termsOfServiceModal" tabindex="-1"
+    aria-labelledby="termsOfServiceModalLabel" aria-hidden="true" data-bs-focus="false">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content contact_us_modal_content">
+        <div class="modal-header contact_us_modal_header">
+          <h2 class="modal-title" id="termsOfServiceModalLabel">Terms of Service</h2>
+          <button type="button" class="contact_us_modal_close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="/assets/close-white-icon.svg" alt="" width="34" height="34">
+          </button>
+        </div>
+        <div class="modal-body contact_us_modal_body footer_policy_modal_body">
+          <div class="footer_policy_modal_content">
+            <p>Add your Terms of Service content here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade contact_us_modal footer_policy_modal" id="privacyPolicyModal" tabindex="-1"
+    aria-labelledby="privacyPolicyModalLabel" aria-hidden="true" data-bs-focus="false">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content contact_us_modal_content">
+        <div class="modal-header contact_us_modal_header">
+          <h2 class="modal-title" id="privacyPolicyModalLabel">Privacy Policy</h2>
+          <button type="button" class="contact_us_modal_close" data-bs-dismiss="modal" aria-label="Close">
+            <img src="/assets/close-white-icon.svg" alt="" width="34" height="34">
+          </button>
+        </div>
+        <div class="modal-body contact_us_modal_body footer_policy_modal_body">
+          <div class="footer_policy_modal_content">
+            <p>Add your Privacy Policy content here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script src="https://www.google.com/recaptcha/api.js?render=6LcfSPssAAAAABOWXFoJy4XFzEMslF0fbEtyk-cR"></script>

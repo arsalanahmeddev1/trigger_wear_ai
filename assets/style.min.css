@@ -250,11 +250,8 @@ h1,
     width: 100%;
     max-width: 611px;
     aspect-ratio: 789 / 604;
-    background-image: url('../images/tw-ai _video-bg-frame.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    display: block;
+    background: url(../images/tw-ai%20_video-bg-frame.png) no-repeat center/100% 100%;
+    display: block
 }
 /* responsive */
 @media(min-width: 1200px) {
@@ -13464,12 +13461,12 @@ img {
 .comn_footer_sec {
     position: relative;
     overflow: hidden;
-    background: #021d40;
+    background: #000;
     color: #fff;
     isolation: isolate
 }
 
-.comn_footer_sec::before {
+/* .comn_footer_sec::before {
     content: "";
     position: absolute;
     left: 0;
@@ -13480,7 +13477,7 @@ img {
     opacity: 1;
     pointer-events: none;
     z-index: 0
-}
+} */
 
 .comn_footer_sec .footer_main {
     position: relative;
@@ -15638,41 +15635,46 @@ body {
     }
 }
 
-.home_hero_section .home_hero_media_frame {
+.home_hero_section .home_hero_media_video_viewport {
     position: absolute;
-    top: 3%;
-    right: 3%;
-    bottom: 3.5%;
-    left: 3%;
-    width: auto;
-    max-width: none;
-    border: none;
-    border-radius: 36px;
+    top: 18.5%;
+    right: 7%;
+    bottom: 8%;
+    left: 7%;
+    border-radius: 23px;
     overflow: hidden;
-    background: transparent;
-    aspect-ratio: unset;
+    isolation: isolate;
+    z-index: 1;
+    height: 290px;
 }
 
-@media(max-width: 767.98px) {
-    .home_hero_section .home_hero_media_frame {
-        top: 2.5%;
-        right: 2.5%;
-        bottom: 3%;
-        left: 2.5%;
-        border: none;
-        border-radius: 22px
-    }
-}
-
-.home_hero_section .home_hero_media_frame iframe {
+.home_hero_section .home_hero_media_video_viewport iframe {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 90%;
-    height: 90%;
-    transform: translate(-50%, -50%);
     border: 0;
-    display: block
+    display: block;
+    transform: translate(-50%, -50%)
+}
+
+.home_hero_section .home_hero_media_frame_shade {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    border-radius: inherit;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, .5), inset 0 3px 6px rgba(210, 240, 255, .35), inset 3px 0 6px rgba(180, 220, 255, .2), inset 0 -6px 18px rgba(45, 15, 85, .45), inset -5px 0 16px rgba(55, 20, 95, .3), inset 5px 5px 28px rgba(15, 40, 100, .35);
+    background: radial-gradient(ellipse 72px 72px at 0 0, rgba(8, 18, 55, .55), transparent 72%), radial-gradient(ellipse 72px 72px at 100% 0, rgba(8, 18, 55, .55), transparent 72%), radial-gradient(ellipse 72px 72px at 0 100%, rgba(8, 18, 55, .55), transparent 72%), radial-gradient(ellipse 72px 72px at 100% 100%, rgba(8, 18, 55, .55), transparent 72%)
+}
+
+@media(max-width: 767.98px) {
+    .home_hero_section .home_hero_media_video_viewport {
+        top: 6.5%;
+        right: 5.5%;
+        bottom: 7%;
+        left: 5.5%;
+        border-radius: 22px
+    }
 }
 
 .home_hero_section .home_hero_media_frame img {
