@@ -19501,6 +19501,7 @@ body {
 }
 
 .home_audience_card:not(.is-expanded) .home_audience_card_peek img {
+    opacity: 0.32;
     filter: grayscale(8%) brightness(1.16) saturate(.82)
 }
 
