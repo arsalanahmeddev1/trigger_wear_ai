@@ -278,13 +278,13 @@ form.submitting .wpcf7-spinner {
 }
 
 @media (max-width: 767.98px) {
-	.home_hero_section .home_hero_media_video_viewport {
+	/* .home_hero_section .home_hero_media_video_viewport {
 		top: 6.5%;
 		right: 5.5%;
 		bottom: 7%;
 		left: 5.5%;
 		border-radius: 22px;
-	}
+	} */
 
 	.home_hero_section .home_hero_media_frame_shade {
 		background:
