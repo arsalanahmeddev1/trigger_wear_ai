@@ -89,35 +89,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->isSMTP();
 
-        $mail->Host = 'smtp.gmail.com';
-        // $mail->Host = 'sandbox.smtp.mailtrap.io';
+         $mail->Host = 'smtp.gmail.com'; // production
+        // $mail->Host = 'sandbox.smtp.mailtrap.io'; // development
 
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'info@triggerware.ai';
-        // $mail->Username = '7bcf94f4579ed1';
+        $mail->Username = 'info@triggerware.ai'; // production
+        // $mail->Username = '7bcf94f4579ed1'; // development
 
-        $mail->Password = 'skhdhohkrvmdiqik';
-        // $mail->Password = 'c0aaa235fd564f';
+        $mail->Password = 'skhdhohkrvmdiqik'; // production
+        // $mail->Password = 'c0aaa235fd564f'; // development
 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
-        $mail->Port = 587;
-        // $mail->Port = 465;
+        $mail->Port = 587; // production
+        // $mail->Port = 465; // development
 
         // ======================
         // EMAIL SETTINGS
         // ======================
 
         $mail->setFrom(
-            'info@triggerware.ai',
-            // 'dev@yopmail.com',
+            'info@triggerware.ai', // production
+            //'dev@yopmail.com', // development
             'Website Contact Form'
         );
 
         $mail->addAddress(
-            'info@triggerware.ai'
-            // 'dev@yopmail.com'
+            'info@triggerware.ai' // production
+            //'dev@yopmail.com' // development
         );
 
         $mail->addReplyTo(
@@ -198,7 +198,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo json_encode([
             'status' => 'success',
-            'message' => 'Message sent successfully!'
+            'message' => 'Form submitted successfully!'
         ]);
         exit;
     } catch (Exception $e) {

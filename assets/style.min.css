@@ -15672,8 +15672,8 @@ body {
     overflow: hidden;
     isolation: isolate;
     z-index: 1;
-    height: 290px;
-    max-width: 480px;
+    height: 285px;
+    max-width: 500px;
     width: 100%;
 }
 
@@ -15683,7 +15683,9 @@ body {
     left: 50%;
     border: 0;
     display: block;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    width: 495.556px;
+
 }
 
 .home_hero_section .home_hero_media_frame_shade {
@@ -16320,7 +16322,7 @@ body {
     height: auto;
     transform: rotate(30deg);
     border-radius: 594.097px;
-    opacity: 50%;
+    opacity: 20%;
     background: #73016d;
     filter: blur(188.4499969482px);
     position: absolute;
@@ -16346,7 +16348,7 @@ body {
     position: absolute;
     bottom: -150px;
     left: -440px;
-    opacity: 50%;
+    opacity: 20%;
 }
 
 @media(min-width: 1800px) {

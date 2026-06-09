@@ -317,6 +317,27 @@ form.submitting .wpcf7-spinner {
 	color: #021d40;
 }
 
+.comn_form_static.wpcf7-form.sent .wpcf7-response-output:not(:empty),
+.comn_form_static.wpcf7-form.invalid .wpcf7-response-output:not(:empty) {
+	display: block !important;
+	margin: 1em 0 0;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+.comn_form_static.wpcf7-form.sent .wpcf7-response-output:not(:empty) {
+	border: 2px solid #46b450;
+	background-color: #f0faf0;
+	color: #2e7d32;
+}
+
+.comn_form_static.wpcf7-form.invalid .wpcf7-response-output:not(:empty) {
+	border: 2px solid #dc3232;
+	background-color: #fff5f5;
+	color: #b32d2e;
+}
 
 .home_explore_video_play_btn {
 	padding: 0 !important;

@@ -2822,7 +2822,7 @@
     </div>
   </div>
 
-
+  <script src="/assets/smooth-scroll.js"></script>
   <script src="https://www.google.com/recaptcha/api.js?render=6LcfSPssAAAAABOWXFoJy4XFzEMslF0fbEtyk-cR"></script>
   <script type="text/javascript" src="/assets/jquery.min.js" id="jquery-js"></script>
   <script type="text/javascript" src="/assets/bootstrap.bundle.min.js" id="bootstrap-js"></script>
@@ -2839,45 +2839,17 @@
     jQuery(document).ready(function($) {
 
       $('.contact_us_modal_close').on('click', function() {
+        var $form = $(this).closest('.modal').find('.contact_form_holder');
 
-        var $form = $('.wpcf7 form');
-
-        // Reset all field values
         if ($form.length) {
           $form[0].reset();
+          $form.removeClass('invalid failed sent spam aborted submitting');
+          $form.find('.wpcf7-not-valid').removeClass('wpcf7-not-valid');
+          $form.find('.wpcf7-not-valid-tip').remove();
+          $form.find('.wpcf7-acceptance input').prop('checked', false);
+          $form.find('.wpcf7-response-output').text('').attr('aria-hidden', 'true');
+          $form.addClass('init').attr('data-status', 'init');
         }
-
-        // Remove validation error classes
-        $form.find('.wpcf7-not-valid').removeClass('wpcf7-not-valid');
-
-        // Remove validation messages
-        $form.find('.wpcf7-not-valid-tip').remove();
-
-        // Hide response message
-        $form.find('.wpcf7-response-output').hide().html('');
-
-        // Remove CF7 form states
-        //$form.removeClass('invalid failed sent spam aborted');
-
-        // Remove acceptance checked state if needed
-        $form.find('.wpcf7-acceptance input').prop('checked', false);
-
-      });
-
-      document.addEventListener('wpcf7mailsent', function() {
-
-        setTimeout(function() {
-
-          $('.wpcf7-response-output')
-            .fadeOut(300, function() {
-              $(this)
-                .removeClass('wpcf7-mail-sent-ok wpcf7-validation-errors wpcf7-spam-blocked')
-                .html('')
-                .show(); // show again for next submit
-            });
-
-        }, 3000);
-
       });
     });
   </script>
@@ -2910,6 +2882,36 @@
     });
   </script>
   <script>
+    function clearContactFormMessage(form) {
+      const output = form.querySelector('.wpcf7-response-output');
+      form.classList.remove('invalid', 'failed', 'spam', 'aborted', 'sent', 'submitting');
+      form.classList.add('init');
+      form.setAttribute('data-status', 'init');
+      if (!output) return;
+      output.textContent = '';
+      output.setAttribute('aria-hidden', 'true');
+    }
+
+    function showContactFormMessage(form, type, message) {
+      const output = form.querySelector('.wpcf7-response-output');
+      if (!output) return;
+
+      form.classList.remove('init', 'resetting', 'submitting', 'invalid', 'failed', 'spam', 'aborted', 'sent');
+      form.querySelectorAll('.wpcf7-not-valid').forEach((el) => el.classList.remove('wpcf7-not-valid'));
+      form.querySelectorAll('.wpcf7-not-valid-tip').forEach((tip) => tip.remove());
+
+      if (!message) {
+        clearContactFormMessage(form);
+        return;
+      }
+
+      const isSuccess = type === 'success';
+      form.classList.add(isSuccess ? 'sent' : 'invalid');
+      form.setAttribute('data-status', isSuccess ? 'sent' : 'invalid');
+      output.textContent = message;
+      output.removeAttribute('aria-hidden');
+    }
+
     document.querySelectorAll('.contact_form_holder').forEach((form) => {
       form.addEventListener('submit', async function(e) {
         e.preventDefault();
@@ -2944,41 +2946,32 @@
           const result = await response.json();
 
           if (result.status === 'success') {
-            Swal.fire({
-              icon: 'success',
-              title: 'Success',
-              text: result.message,
-              confirmButtonColor: '#b39648'
-            });
-
             form.reset();
-
-            const modalEl = form.closest('.modal');
-            if (modalEl && window.bootstrap) {
-              bootstrap.Modal.getInstance(modalEl)?.hide();
-            }
+            showContactFormMessage(
+              form,
+              'success',
+              result.message || 'Form submitted successfully!'
+            );
           } else {
-            Swal.fire({
-              icon: 'error',
-              title: 'Error',
-              text: result.message,
-              confirmButtonColor: '#b39648'
-            });
+            showContactFormMessage(
+              form,
+              'error',
+              result.message || 'Something went wrong. Please try again.'
+            );
           }
         } catch (error) {
-          Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: 'Something went wrong. Please try again.',
-            confirmButtonColor: '#b39648'
-          });
+          showContactFormMessage(
+            form,
+            'error',
+            'Something went wrong. Please try again.'
+          );
         }
 
         submitBtn.disabled = false;
       });
     });
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 
 </html>
