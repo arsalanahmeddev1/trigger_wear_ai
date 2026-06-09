@@ -239,19 +239,20 @@ h1,
 }
 .home_hero_bottom_cta_bg {
     background-color: #2877A8;
-    padding: 20px;
+    padding: 15px 0;
 }
 .home_hero_bottom_cta p {
-    padding: 40px 0 20px;
+    padding: 40px 0 12px;
 }
 
 .home_hero_media_frame-wrapper {
     position: relative;
     width: 100%;
-    max-width: 611px;
+    max-width: 551px;
     aspect-ratio: 789 / 604;
     background: url(../images/tw-ai%20_video-bg-frame.png) no-repeat center/100% 100%;
-    display: block
+    display: block;
+    position: relative;
 }
 .footer_policy_modal a:hover {
     color: #021d40;
@@ -262,7 +263,7 @@ h1,
 }
 .footer_policy_modal h2 {
     margin-bottom: 10px;
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 600;
 }
 .footer_policy_modal p {
@@ -270,6 +271,13 @@ h1,
 }
 .footer_policy_modal ul li {
     list-style: disc;
+}
+.home_hero_dsc_content {
+    padding-left: 15px;
+}
+.home_hero_section .hero-th-para,
+.home_hero_section .hero-ft-para {
+    font-size: 22px !important;
 }
 /* responsive */
 @media(min-width: 1200px) {
@@ -15538,7 +15546,7 @@ body {
 }
 
 .home_hero_section .home_hero_kicker {
-    margin: 0 0 20px;
+    margin: 0 0 50px;
     font-size: 20px;
     font-weight: 700;
     line-height: 1;
@@ -15655,15 +15663,18 @@ body {
 
 .home_hero_section .home_hero_media_video_viewport {
     position: absolute;
-    top: 18.5%;
-    right: 7%;
-    bottom: 8%;
-    left: 7%;
+    top: 50%;
+    /* bottom: 8%; */
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%) !important;
     border-radius: 23px;
     overflow: hidden;
     isolation: isolate;
     z-index: 1;
     height: 290px;
+    max-width: 480px;
+    width: 100%;
 }
 
 .home_hero_section .home_hero_media_video_viewport iframe {
@@ -15733,7 +15744,7 @@ body {
     font-family: "Epilogue", sans-serif;
     font-size: 24px;
     font-weight: 500;
-    line-height: 1.33;
+    /* line-height: 1.33; */
     letter-spacing: -0.24px;
     color: #fff
 }
@@ -16309,7 +16320,7 @@ body {
     height: auto;
     transform: rotate(30deg);
     border-radius: 594.097px;
-    opacity: .7;
+    opacity: 50%;
     background: #73016d;
     filter: blur(188.4499969482px);
     position: absolute;
@@ -16335,7 +16346,7 @@ body {
     position: absolute;
     bottom: -150px;
     left: -440px;
-    opacity: .7;
+    opacity: 50%;
 }
 
 @media(min-width: 1800px) {
@@ -18459,7 +18470,7 @@ body {
 @media(min-width: 1200px) {
     .home_contact_cta_sec .home_contact_cta_content {
         width: min(800px, 100%);
-        padding: 120px 20px 120px 0
+        padding: 0px 20px 120px 0
     }
 }
 
@@ -19427,7 +19438,7 @@ body {
 
 /* TriggerWare PDF corrections */
 .home_hero_section {
-    background: radial-gradient(ellipse at 52% 44%, rgba(115, 1, 109, .20) 0, rgba(115, 1, 109, .11) 25%, rgba(115, 1, 109, .04) 42%, rgba(115, 1, 109, 0) 58%), linear-gradient(90deg, #061f49 0%, #071f48 44%, #061d3f 100%) !important
+    background: #04041D;
 }
 
 .home_hero_section .home_hero_bg_shape_one {

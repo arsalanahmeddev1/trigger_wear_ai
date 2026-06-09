@@ -234,14 +234,6 @@ form.submitting .wpcf7-spinner {
 	position: relative;
 }
 
-.home_hero_media_frame-wrapper {
-	position: relative;
-	width: 100%;
-	max-width: 611px;
-	aspect-ratio: 789 / 604;
-	background: url('/images/tw-ai%20_video-bg-frame.png') no-repeat center / 100% 100%;
-}
-
 /* Inner screen — inset aligns with frame PNG; JS scales iframe to cover */
 /* .home_hero_section .home_hero_media_video_viewport {
 	position: absolute;

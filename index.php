@@ -853,12 +853,12 @@
                     In the Age of AI, one daunting challenge remains:
                     <span class="hero-sc-para" style="color: #15C2FF">finding and acting on relevant&nbsp; live data<em style="color: #BDD7EE">!</em></span>
                   </p>
-                  <p class="d-flex">
+                  <p class="d-flex hero-th-para">
                     <span class="star-element"></span>
                     TriggerWare.AI has risen to this challenge.
                   </p>
-                  <p class="d-flex">
-                    <span class="star-element"></span>
+                  <p class="d-flex hero-ft-para">
+                    <span class="star-element "></span>
                     Using our solution, critical insights from live data sources can be at your fingertips within
                     minutes.
                   </p>
