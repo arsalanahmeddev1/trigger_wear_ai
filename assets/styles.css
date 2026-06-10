@@ -166,6 +166,11 @@ form.submitting .wpcf7-spinner {
 	font-family: var(--font-source-serif-pro) !important;
 	font-style: italic !important;
 }
+.hero-sub-heading {
+	font-size: 28px;
+	line-height: 1.4285714286;
+	font-weight: 600;
+}
 /* responsive css */
 
 @media (prefers-reduced-motion: reduce) {

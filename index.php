@@ -849,8 +849,8 @@
                 <h1 class="home_hero_kicker">The New Era</h1>
 
                 <div class="home_hero_dsc_content">
+                  <h2 class="text-white hero-sub-heading">In the Age of AI, one daunting challenge remains:</h2>
                   <p>
-                    In the Age of AI, one daunting challenge remains:
                     <span class="hero-sc-para" style="color: #15C2FF">finding and acting on relevant&nbsp; live data<em style="color: #BDD7EE">!</em></span>
                   </p>
                   <p class="d-flex hero-th-para">

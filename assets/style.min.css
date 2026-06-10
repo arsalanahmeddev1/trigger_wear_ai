@@ -15700,7 +15700,7 @@ body {
     border: 0;
     display: block;
     transform: translate(-50%, -50%);
-    width: 495.556px;
+    width: 488px !important;
 
 }
 
@@ -16337,7 +16337,7 @@ body {
     height: auto;
     transform: rotate(30deg);
     border-radius: 594.097px;
-    opacity: 20%;
+    opacity: 35%;
     background: #73016d;
     filter: blur(188.4499969482px);
     position: absolute;
@@ -16363,7 +16363,7 @@ body {
     position: absolute;
     bottom: -150px;
     left: -440px;
-    opacity: 20%;
+    opacity: 35%;
 }
 
 @media(min-width: 1800px) {
