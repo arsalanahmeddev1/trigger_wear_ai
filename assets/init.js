@@ -782,7 +782,8 @@ if (!isMobileDevice()) {
 
     const containerW = container.offsetWidth;
     const containerH = container.offsetHeight;
-    const videoRatio = 16 / 9;
+    // const videoRatio = 16 / 9;
+    const videoRatio = 1 / 1;
     let newW;
     let newH;
 

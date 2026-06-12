@@ -881,10 +881,15 @@
 
           </div>
           <div class="home_hero_bottom_cta position-absolute bottom-0 start-0 w-100">
-            <p><span class="star-element"></span> <span class="para-span-text" style="margin-right: 10px;">We invite you to explore how our platform empowers you to unleash the potential of real-time data.</span> <span class="star-element"></span></p>
+            <div class="container">
+              <p class="home_hero_bottom_cta_text">
+                <span class="star-element"></span> 
+                <span class="para-span-text" style="margin-right: 10px;">We invite you to explore how our platform empowers you to unleash the potential of real-time data.</span> 
+                <span class="star-element"></span>
+              </p>
+            </div>
             <div class="home_hero_bottom_cta_bg">
             </div>
-
           </div>
         </section>
 

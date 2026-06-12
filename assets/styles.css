@@ -31,11 +31,18 @@
 	font-weight: 700;
 	font-style: bold;
 }
+@font-face {
+	font-family: 'Source Serif Pro italic';
+	src: url('/assets/fonts/Source Serif Pro SemiBold.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
 
 
 :root {
 	--font-arial-rounded: 'Arial Rounded MT', Arial, sans-serif; 
 	--font-source-serif-pro: 'Source Serif Pro', Arial, sans-serif;
+	--font-source-serif-pro-italic: 'Source Serif Pro italic', Arial, sans-serif;
 }
 
 
@@ -163,11 +170,11 @@ form.submitting .wpcf7-spinner {
 	font-family: var(--font-arial-rounded) !important;
 }
 .hero-sc-para {
-	font-family: var(--font-source-serif-pro) !important;
+	font-family: var(--font-source-serif-pro-italic) !important;
 	font-style: italic !important;
 }
 .hero-sub-heading {
-	font-size: 28px;
+	font-size: 30px;
 	line-height: 1.4285714286;
 	font-weight: 600;
 }
@@ -262,7 +269,7 @@ form.submitting .wpcf7-spinner {
 } */
 
 /* Inner bezel shade — masks square iframe corners like first SS */
-.home_hero_section .home_hero_media_frame_shade {
+/* .home_hero_section .home_hero_media_frame_shade {
 	position: absolute;
 	inset: 0;
 	z-index: 2;
@@ -280,7 +287,7 @@ form.submitting .wpcf7-spinner {
 		radial-gradient(ellipse 72px 72px at 100% 0, rgba(8, 18, 55, 0.55), transparent 72%),
 		radial-gradient(ellipse 72px 72px at 0 100%, rgba(8, 18, 55, 0.55), transparent 72%),
 		radial-gradient(ellipse 72px 72px at 100% 100%, rgba(8, 18, 55, 0.55), transparent 72%);
-}
+} */
 
 @media (max-width: 767.98px) {
 	/* .home_hero_section .home_hero_media_video_viewport {
