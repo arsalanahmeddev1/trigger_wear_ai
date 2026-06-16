@@ -867,13 +867,18 @@
               <div class="home_hero_media_col position-relative">
                 <div class="home_hero_media_frame-wrapper">
                   <div class="home_hero_media_video_viewport">
-                    <iframe
+                    <!-- <iframe
                       id="heroVimeo"
                       src="https://player.vimeo.com/video/1191590401?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;controls=0&amp;muted=1&amp;loop=1&amp;background=1"
                       frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                       referrerpolicy="strict-origin-when-cross-origin"
                       title="family-overview-video"></iframe>
-                    <span class="home_hero_media_frame_shade" aria-hidden="true"></span>
+                    <span class="home_hero_media_frame_shade" aria-hidden="true"></span> -->
+                    <video width="100%" height="100%" autoplay muted loop>
+                      <source src="./images/video.mp4" type="video/mp4">
+                      <source src="./images/video.mp4" type="video/ogg">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </div>
@@ -883,8 +888,8 @@
           <div class="home_hero_bottom_cta position-absolute bottom-0 start-0 w-100">
             <div class="container">
               <p class="home_hero_bottom_cta_text">
-                <span class="star-element"></span> 
-                <span class="para-span-text" style="margin-right: 10px;">We invite you to explore how our platform empowers you to unleash the potential of real-time data.</span> 
+                <span class="star-element"></span>
+                <span class="para-span-text" style="margin-right: 10px;">We invite you to explore how our platform empowers you to unleash the potential of real-time data.</span>
                 <span class="star-element"></span>
               </p>
             </div>
