@@ -238,7 +238,7 @@ h1,
     font-size: calc(1.375rem + 1.5vw)
 }
 .home_hero_bottom_cta_bg {
-    background-color: #2877A8;
+    background-color: #04041D;
     padding: 15px 0;
 }
 .home_hero_bottom_cta p {
@@ -15484,7 +15484,7 @@ body {
 .home_hero_section {
     position: relative;
     overflow: hidden;
-    padding: 183px 0;
+    padding: 183px 0 160px 0;
     background-color: #021d40
 }
 
@@ -19553,7 +19553,7 @@ body {
 
 .home_audience_card_peek.home_audience_card_peek--builders .home_audience_card_peek_scrim,
 .home_audience_card_peek.home_audience_card_peek--techies .home_audience_card_peek_scrim {
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .30) 34%, rgba(255, 255, 255, .54) 64%, rgba(255, 255, 255, .30) 100%) !important;
+    /* background-image: linear-gradient(90deg, rgba(255, 255, 255, .98) 0%, rgba(255, 255, 255, .30) 34%, rgba(255, 255, 255, .54) 64%, rgba(255, 255, 255, .30) 100%) !important; */
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
